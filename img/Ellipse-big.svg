@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="835.97" height="362.938" viewBox="0 0 835.97 362.938">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #00ad88;
+        stroke-width: 1px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Ellipse-big.svg" class="cls-1" d="M922.266,358.411c229.584-61.518,432.814-47.533,453.924,31.239s-147.9,192.5-377.49,254.015S565.885,691.2,544.778,612.425,692.679,419.929,922.266,358.411Z" transform="translate(-542.5 -319.562)"/>
+</svg>
