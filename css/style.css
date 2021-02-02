@@ -196,6 +196,7 @@ img {
     color: var(--text-light);
     font-size: 36px;
     background-color: var(--card-bg);
+    opacity: 70%;
     border: 1px solid var(--text-main-color);
     border-radius: 30px;
     padding: 35px 100px;
