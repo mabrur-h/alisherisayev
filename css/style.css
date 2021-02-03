@@ -259,9 +259,13 @@ img {
 }
 
 #business .section__content__wrapper {
-    padding: 130px 0;
+    padding: 70px 0;
+    height: 520px;
 }
 
 #business .section__title {
     text-align: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
