@@ -5,7 +5,7 @@
     --text-main-color: #2d2f46;
     --text-light: #fff;
     --text-gray: #e5e5e5;
-    --card-bg: #1d1f30;
+    --card-bg: #1d1f30dd;
 }
 
 @font-face {
@@ -186,11 +186,11 @@ img {
     min-height: 100vh;
 }
 
-#info .about__list {
+.about__list {
     padding-top: 350px;
 }
 
-#info .about__list__item {
+.about__list__item {
     color: var(--text-light);
     font-size: 36px;
     background-color: var(--card-bg);
@@ -204,7 +204,7 @@ img {
     font-weight: normal;
 }
 
-#info .about__list__item:hover {
+.about__list__item:hover {
     box-shadow: 0 5px 15px -5px var(--main-color);
     transition: 1s;
 }
@@ -294,10 +294,25 @@ img {
     text-align: center;
     padding: 20px 25px;
     margin-top: 30px;
+    border: 2px solid var(--main-color);
+}
+
+#business .register__button:hover {
+    background: transparent;
+    border: 2px solid var(--text-light);
+    transition: .5s;
 }
 
 #business .text__light {
     font-size: 26px;
+}
+
+
+#program {
+    background-image: url("../img/Ellipse-bg2.svg"), url("../img/Ellipse-bg2.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 60%, 40%;
+    background-position: 180% 30%, -20% 95%;
 }
 
 #program .section__content__wrapper {
@@ -317,7 +332,6 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 25px;
 }
 
 #program .accordion__title__wrapper {
@@ -349,6 +363,8 @@ img {
 
 #program .accordion__content__body {
     color: var(--text-light);
+    max-height: 0;
+    overflow: hidden;
     opacity: 50%;
     font-weight: normal;
     font-size: 20px;
@@ -365,32 +381,120 @@ img {
     font-weight: bold;
 }
 
-#program .accordion__info {
-    padding: 20px 50px;
-    background-color: var(--card-bg);
-    border: 2px solid var(--text-secondary-color);
-    border-radius: 40px;
+.accordion {
     width: 85%;
-    cursor: pointer;
+}
+.accordion-item {
+    background-color: var(--card-bg);
+    color: var(--text-light);
+    margin: 10px;
+    border-radius: 2rem;
+    border: 2px solid var(--text-secondary-color);
+    padding: 1rem 2rem;
 }
 
-#program .accordion__info:active {
+.accordion-item:active {
     border: 2px solid var(--main-color);
 }
 
-#program .accordion__info:active .accordion__button {
-    border: 1px solid var(--main-color);
+.accordion-item:focus {
+    border: 2px solid var(--main-color);
 }
 
-#program .accordion__info:focus .accordion__button {
-    border: 1px solid var(--main-color);
+.accordion-item-header {
+    padding: 0.5rem 3rem 0.5rem 1rem;
+    min-height: 3.5rem;
+    line-height: 1.25rem;
+    font-weight: bold;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
 }
-
-#program .accordion__info:hover {
+.accordion-item-header::after {
+    content: "";
+    background-image: url("../img/arrow1.svg");
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--text-secondary-color);
+    border-radius: 50%;
+    position: absolute;
+    right: 1rem;
+    transition: .5s;
+}
+.accordion-item-header.active::after {
+    content: "";
+    background-image: url("../img/arrow.svg");
+    transform: rotate(90deg);
     border: 2px solid var(--main-color);
     transition: .5s;
 }
+.accordion-item-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+.accordion-item-body-content {
+    padding: 1rem 3rem;
+    line-height: 1.5rem;
+    border-top: 1px solid;
+    opacity: 60%;
+    border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+}
 
-#program .accordion__info:focus {
+#program .additional__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#program .additional__themes {
+    padding-top: 30px;
+}
+
+#program .about__list__item {
+    width: 85%;
+    margin: 10px 0;
+    font-size: 36px;
+    padding: 1rem 4rem;
+    text-align: start;
+}
+
+#program .about__wrapper {
+    padding-top: 3rem;
+}
+
+#program .about__wrapper .section__title {
+    background: none;
+    font-size: 80px;
+    padding: 0 200px;
+    line-height: 5rem;
+    font-weight: bolder;
+}
+
+#program .register__button {
+    margin: 50px 0;
+    padding: 20px 10px;
+    border-radius: 40px;
     border: 2px solid var(--main-color);
+    width: 100%;
+}
+
+#program .register__button:hover {
+    background: transparent;
+    border: 2px solid var(--text-light);
+    transition: .5s;
+}
+
+#partners .section__title {
+    text-align: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 200px;
+
 }
