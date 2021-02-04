@@ -64,12 +64,10 @@ img {
 
 .register__button:focus {
     background-color: var(--main-color);
-    border: 2px solid var(--main-color);
 }
 
 .register__button:active {
     background-color: var(--main-color);
-    border: 2px solid var(--main-color);
 }
 
 .background__turquoise {
@@ -269,3 +267,50 @@ img {
     display: flex;
     align-items: center;
 }
+
+#business .business__man__wrapper {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+#business .business__man__img {
+    width: 48%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#business .business__man__img img {
+    width: 70%;
+}
+
+#business .business__man__info {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#business .register__button {
+    text-align: center;
+    padding: 20px 25px;
+    margin-top: 30px;
+}
+
+#business .text__light {
+    font-size: 26px;
+}
+
+#program .section__content__wrapper {
+    padding: 70px 0;
+    height: 520px;
+}
+
+#program .section__title {
+    text-align: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
