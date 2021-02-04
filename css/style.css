@@ -766,3 +766,76 @@ img {
     z-index: -1;
     border: 1px solid var(--main-color);
 }
+
+#form {
+    background-color: #00ad88;
+    position: relative;
+}
+
+#form .content__wrapper {
+    display: flex;
+    align-items: center;
+}
+
+#form .form__wrapper {
+    display: flex;
+    width: 50%;
+}
+
+#form .form__wrapper h4 {
+    font-size: 80px;
+    padding-bottom: 40px;
+}
+
+#form .input__area {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+#form .input__area span {
+    opacity: 40%;
+}
+
+#form .input__place {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--text-light);
+    background: transparent;
+    font-size: 24px;
+    color: var(--text-light);
+    padding: 5px 0;
+}
+
+
+#form .image__wrapper {
+    width: 50%;
+}
+
+#form .image__wrapper img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+#form textarea {
+    min-height: 150px;
+}
+
+#form textarea::placeholder {
+    font-size: 18px;
+    color: var(--text-light);
+    opacity: 40%;
+    font-weight: normal;
+}
+
+#form .register__button {
+    border: 2px solid var(--text-light);
+    margin-top: 20px;
+    padding: 15px 35px;
+}
+
+#form .register__button:hover {
+    background: var(--main-color);
+    transition: .5s;
+}
