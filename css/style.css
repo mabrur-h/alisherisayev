@@ -27,9 +27,47 @@ html {
     text-decoration: none;
 }
 
+
+::-webkit-scrollbar {
+    width: 4px;
+    height: 2px;
+}
+
+::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #e1e1e1;
+    border: 0px none #ffffff;
+    border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+}
+::-webkit-scrollbar-thumb:active {
+    background: #000000;
+}
+::-webkit-scrollbar-track {
+    background: #666666;
+    border: 0px none #ffffff;
+    border-radius: 50px;
+}
+::-webkit-scrollbar-track:hover {
+    background: #666666;
+}
+::-webkit-scrollbar-track:active {
+    background: #333333;
+}
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
 body {
     font-family: "SFPro Display", sans-serif;
     background-color: var(--bg-color);
+    overflow-x: hidden;
 }
 
 img {
@@ -490,11 +528,16 @@ img {
     transition: .5s;
 }
 
+#partners .section__content__wrapper {
+    height: 300px;
+}
+
 #partners .section__title {
     text-align: center;
     height: 100%;
     display: flex;
     align-items: center;
     padding: 0 200px;
+    background-size: 50%;
 
 }
