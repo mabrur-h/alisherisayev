@@ -1399,6 +1399,10 @@ img {
         align-items: flex-start;
     }
 
+    .navbar__details {
+        display: none;
+    }
+
     .container {
         width: 310px;
         padding: 0 10px;
