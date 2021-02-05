@@ -1482,6 +1482,10 @@ img {
         font-size: 12px;
     }
 
+    #info .container {
+        width: 100%;
+    }
+
     #info .text__light {
         font-size: 22px;
         text-align: center;
