@@ -1392,9 +1392,19 @@ img {
 }
 
 @media screen and (max-width: 500px){
+    #promo {
+        min-height: 100vh;
+        display: flex;
+        align-items: flex-start;
+    }
+
     .container {
         width: 310px;
         padding: 0 10px;
+    }
+
+    #promo .container {
+        padding-top: 60px;
     }
 
     .navbar__logo__text {
@@ -1402,7 +1412,7 @@ img {
     }
 
     .section__subtext {
-        width: 50%;
+        width: 80%;
         font-size: 14px;
     }
 
@@ -1497,4 +1507,10 @@ img {
         padding: 0 20px;
         min-height: 2rem;
     }
+
+    .accordion-item {
+        display: flex;
+        flex-direction: column;
+    }
+
     }
