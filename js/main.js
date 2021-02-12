@@ -1,4 +1,9 @@
 const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
+const urlParams = new URLSearchParams(window.location.search);
+const myParam = urlParams.get('mode');
+if (myParam == 'light') {
+    document.documentElement.classList.add("light__mode");
+}
 
 accordionItemHeaders.forEach(accordionItemHeader => {
     accordionItemHeader.addEventListener("click", event => {
@@ -15,6 +20,10 @@ accordionItemHeaders.forEach(accordionItemHeader => {
 
     });
 });
+
+window.onload = function() {
+
+};
 
 window.onscroll = function () {
     scrollFunction()

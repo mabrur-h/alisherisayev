@@ -10,7 +10,14 @@
 }
 
 :root.light__mode {
-
+    --main-color: #00ad88;
+    --bg-color: #ffffff;
+    --text-secondary-color: #454651;
+    --text-main-color: #2d2f46;
+    --text-light: #151726;
+    --text-gray: #e5e5e5;
+    --card-bg: #fff;
+    --price-bg: #f7f7f7;
 }
 
 @font-face {
@@ -207,7 +214,7 @@ img {
 @media (min-width:641px)  {
     .sticky #stickyheader {
         z-index: 99;
-        background: #161826;
+        background: var(--bg-color);
         position: fixed;
         top: 0;
         justify-content: space-between;
@@ -231,11 +238,6 @@ img {
     }
 
 }
-
-
-
-
-
 
 #about .section__content__wrapper {
     display: flex;
