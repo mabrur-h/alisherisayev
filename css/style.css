@@ -210,7 +210,11 @@ img {
 #about {
     display: flex;
     align-items: center;
+    padding-bottom: 150px;
+    transition: 1s;
 }
+
+
 @media (min-width:641px)  {
     .sticky #stickyheader {
         z-index: 99;
@@ -393,12 +397,14 @@ img {
     background-position: 180% 30%, -20% 95%;
 }
 
-#program .section__content__wrapper {
+#program .section__content__wrapper,
+#steps .section__title{
     padding: 70px 0;
     height: 520px;
 }
 
-#program .section__title {
+#program .section__title,
+#steps .section__title{
     text-align: center;
     height: 100%;
     display: flex;
@@ -962,6 +968,42 @@ img {
     color: var(--text-light);
 }
 
+.course-target-list {
+    margin-bottom: 75px
+}
+.course-target-list li {
+    display: flex;
+    padding: 30px 20px;
+    border-width: 1px;
+    border-color: rgb(47, 50, 73);
+    border-style: solid;
+    border-radius: 30px;
+    background-color: var(--card-bg);
+    opacity: 0.9;
+    box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.28);
+    margin-top: 20px;
+}
+.course-target-list li span {
+    margin: 0 30px;
+    font-size: 120px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--main-color);
+    font-weight: 700;
+    margin-bottom: 15px
+}
+.course-target-list li h6 {
+    color: var(--text-light);
+    font-size: 40px;
+    margin-bottom: 25px
+}
+.course-target-list li p {
+    color: var(--text-gray);
+    opacity: 0.8;
+    font-size: 20px;
+    line-height: 1.5
+}
+
 @media screen and (max-width: 1160px) {
     .container {
         width: 980px;
@@ -991,6 +1033,7 @@ img {
 
     #about {
         transition: 2s;
+        padding-bottom: 30px;
     }
 
     #about .text__light {
@@ -1436,6 +1479,35 @@ img {
     #footer .copyright {
         font-size: 12px;
     }
+    .course-target-list {
+        margin-bottom: 50px
+    }
+    .course-target-list li {
+        flex-direction: column;
+        padding: 10px 25px;
+    }
+    .course-target-list li span {
+        font-size: 80px;
+        margin-bottom: 0
+    }
+    .course-target-list li h6 {
+        font-size: 22px;
+        margin-bottom: 10px
+    }
+    .course-target-list li p {
+        color: var(--text-gray);
+        opacity: 0.8;
+        font-size: 14px;
+        line-height: 1.2
+    }
+
+    #stepitems .container {
+        width: 90%;
+    }
+    .course-target-list li span {
+        margin: 0;
+    }
+
 }
 
 @media screen and (max-width: 500px){
