@@ -9,6 +9,10 @@
     --price-bg: #141622;
 }
 
+:root.light__mode {
+
+}
+
 @font-face {
     font-family: "SFPro Display";
     src: url("/fonts/SFProDisplay-Bold.woff2") format("woff2"),
@@ -776,9 +780,13 @@ img {
 #form {
     background-color: #00ad88;
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
+}
+
+#form .form__area {
+    padding: 20px 0;
 }
 
 #form .content__wrapper {
@@ -789,11 +797,12 @@ img {
 #form .form__wrapper {
     display: flex;
     width: 50%;
+    z-index: 100;
 }
 
 #form .form__wrapper h4 {
-    font-size: 80px;
-    padding-bottom: 40px;
+    font-size: 70px;
+    padding-bottom: 30px;
 }
 
 #form .input__area {
